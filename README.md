@@ -1,5 +1,5 @@
 # Codeforces-Solutions-Scraper
-This script scrapes all accepted solutions of any user on Codeforces and saves it on your local machine.
+This script scrapes all accepted solutions of any user on Codeforces.
 
 ### Dependencies
 * python3

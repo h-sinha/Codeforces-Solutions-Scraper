@@ -23,7 +23,7 @@ for i in range(endPage):
 			solutions.append(row.find(class_='view-source')['href'])
 		except Exception as e:
 			print(e)
-
+	#saving the solution locally
 	for solution in solutions:
 		solutionPageUrl = 'http://codeforces.com'+solution
 		response = requests.get(solutionPageUrl)

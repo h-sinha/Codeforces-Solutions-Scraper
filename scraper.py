@@ -32,5 +32,6 @@ for i in range(endPage):
 		try:        
 			f= open(fileName ,"w+")
 			f.write(soup.find(class_='prettyprint lang-cpp program-source').get_text().strip())
+			print(fileName,' saved')
 		except:
 			pass

@@ -21,8 +21,8 @@ for i in range(endPage):
 			if status != 'Accepted':
 				continue
 			solutions.append(row.find(class_='view-source')['href'])
-		except Exception as e:
-			print(e)
+		except:
+			pass
 	#saving the solution locally
 	for solution in solutions:
 		solutionPageUrl = 'http://codeforces.com'+solution
@@ -32,5 +32,5 @@ for i in range(endPage):
 		try:        
 			f= open(fileName ,"w+")
 			f.write(soup.find(class_='prettyprint lang-cpp program-source').get_text().strip())
-		except Exception as e:
-			print(e)
+		except:
+			pass
